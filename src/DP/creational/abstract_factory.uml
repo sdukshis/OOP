@@ -1,0 +1,31 @@
+@startuml
+
+interface AbstrctFactory {
+    +createProduct()
+}
+
+interface AbstractProduct {
+    
+}
+
+class ConcreteFactoryA {
+    +createItem()
+}
+
+class ConcreteFactoryB {
+    +createItem()
+}
+
+ConcreteFactoryA -up-|> AbstrctFactory
+ConcreteFactoryB -up-|> AbstrctFactory
+
+class ProductA {
+}
+
+class ProductB {
+    
+}
+
+ProductA -up-|> AbstractProduct
+ProductB -up-|> AbstractProduct
+@enduml
