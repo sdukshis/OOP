@@ -28,6 +28,7 @@ std::ostream &operator<<(std::ostream &stream, const Request &req) {
   stream << req.body;
   return stream;
 }
+
 class RequestBuilder {
 public:
   RequestBuilder &method(const std::string &method) {
